@@ -93,13 +93,13 @@ def main():
     # --- 繪圖 --------------------------------------------------------
     plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']
     fig, ax1 = plt.subplots(figsize=(10, 6))
-    ax1.set_title('0050 每月定額 $10,000 回測', size=16)
+    ax1.set_title('0050 $10,000 TEST', size=16)
     ax1.set_xlabel('Date'); ax1.set_ylabel('Value (NTD)')
     ax1.xaxis.set_major_locator(MultipleLocator(12))
     for tick in ax1.get_xticklabels(): tick.set_rotation(45)
 
     ax1.plot(date, market_value, label='市值', color='indianred')
-    ax1.bar(date, cost,            color='orange', label='成本')
+    ax1.bar(date, cost, color='orange', label='成本')
     ax1.bar(date, cum_dividend, bottom=cost,
             color='red', label='累積股利')
 
@@ -110,7 +110,7 @@ def main():
 
 
 # 3. Streamlit 入口 ----------------------------------------------------
-st.set_page_config(page_title='0050 每月定額回測', layout='wide')
+st.set_page_config(page_title='0050', layout='wide')
 st.title('0050 ETF 每月定額回測')
 
 if st.button('開始跑回測'):
