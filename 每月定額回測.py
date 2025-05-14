@@ -16,7 +16,7 @@ import matplotlib.font_manager as fm
 from pathlib import Path
 
 # 1) 指向 fonts 資料夾裡的字型檔
-font_path = Path(__file__).parent / 'fonts' / 'NotoSansTC-Regular.otf'
+font_path = Path(__file__).parent / 'main' / 'NotoSansTC-Regular.otf'
 # 2) 若找得到就註冊並指定；找不到只 print 提示，不呼叫 st.warning()
 if font_path.exists():
     fm.fontManager.addfont(str(font_path))
