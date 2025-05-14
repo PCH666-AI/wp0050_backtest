@@ -93,7 +93,7 @@ def main():
     # --- 繪圖 --------------------------------------------------------
     plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']
     fig, ax1 = plt.subplots(figsize=(10, 6))
-    ax1.set_title('0050  $10,000 回測', size=16)
+    ax1.set_title('0050 每月定額 $10,000 回測', size=16)
     ax1.set_xlabel('Date'); ax1.set_ylabel('Value (NTD)')
     ax1.xaxis.set_major_locator(MultipleLocator(12))
     for tick in ax1.get_xticklabels(): tick.set_rotation(45)
