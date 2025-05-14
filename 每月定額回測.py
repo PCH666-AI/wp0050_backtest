@@ -72,7 +72,7 @@ def main():
     fig.add_trace(go.Scatter(x=date, y=market_value, name='市值', mode='lines', line=dict(color='indianred')))
 
     fig.update_layout(
-        title='0050 Regular Saving Plan $10,000 回測',
+        title='0050 每月定額回測 $10,000 回測',
         xaxis_title='Date',
         yaxis_title='Value (NTD)',
         barmode='stack',
