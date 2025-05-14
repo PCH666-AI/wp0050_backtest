@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 from matplotlib.pyplot import MultipleLocator
 pd.set_option('mode.chained_assignment', None)
 def main():
-    stock = pd.read_csv('0050歷史股價.csv',', encoding='UTF-8', low_memory=False, index_col=False)
-    dividend = pd.read_csv('0050歷史股利.csv',, encoding='UTF-8', low_memory=False, index_col=False)
+    stock = pd.read_csv('0050歷史股價.csv', encoding='UTF-8', low_memory=False, index_col=False)
+    dividend = pd.read_csv('0050歷史股利.csv', encoding='UTF-8', low_memory=False, index_col=False)
     
     max_price = stock.loc[0, '收盤價(元)']
     true_cost=[0]
